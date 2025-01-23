@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #333; /* Dark background for differentiation */
+    color: #fff; /* White text for contrast */
+    display: flex; /* Make nav a flex container */
+    justify-content: space-between; /* Separate items to left and right */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px; /* Add some padding for spacing */
+}
+
+/* Style for text and links inside nav */
+nav p, nav a {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Styling the link inside nav */
+nav a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #222; /* Dark background for differentiation */
+    color: #ddd; /* Light text for contrast */
+    display: flex; /* Make footer a flex container */
+    justify-content: center; /* Center the children horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+/* Style for links inside the footer */
+footer a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Add spacing between links */
+    font-size: 18px;
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Splash Section */
+.splash {
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background for visual impact */
+    color: #ffffff; /* White text for contrast */
+    text-align: center; /* Center align text */
+    padding: 30px 20px; /* Add spacing around content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Styling for the heading inside the splash section */
+.splash h1 {
+    font-family: 'Poppins', sans-serif; /* Google Font */
+    font-size: 3.5rem; 
+    font-weight: 700; /* Bold font weight */
+    color: #ffffff; /* Use color number for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    letter-spacing: 2px; /* Add letter spacing for elegance */
+    text-transform: uppercase; /* Uppercase for impact */
+}
+
+/* Styling for the headshot image */
+.splash img {
+    border-radius: 50%; /* Make the image circular */
+    width: 200px; /* Define image width */
+    height: 200px; /* Define image height */
+    border: 8px solid #ffcc00; /* Add a gold border for contrast */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.splash p {
+    font-size: 1.2rem; /* Readable font size */
+    max-width: 700px; /* Limit paragraph width for readability */
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 15px; /* Space below each paragraph */
+}
+
+
+/* Horizontal Rules */
+hr {
+    border: 3px solid #ffcc00; /* Thick solid gold border */
+    border-radius: 5px; /* Rounded edges for a softer look */
+    margin: 30px auto; /* Center and add spacing */
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* Section Headings */
+section h1 {
+    font-family: 'Montserrat', sans-serif; /* Apply Google Font */
+    font-size: 2rem; /* Increase font size for emphasis */
+    color: #004e92; /* Use a specific color number (dark blue) */
+    text-transform: uppercase; /* Make headings uppercase for emphasis */
+    margin-bottom: 10px; /* Space after heading */
+    
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif; /* Apply Google Font */
+    font-size: 2rem; /* Increase font size for emphasis */
+    color: #004e92; /* Use a specific color number (dark blue) */
+    text-transform: uppercase; /* Make headings uppercase for emphasis */
+    margin-bottom: 10px; /* Space after heading */
+}
+
+
+/* Paragraph Styles */
+section p {
+    font-size: 1rem; /* Readable font size */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Improve readability with spacing */
+    margin-bottom: 15px; /* Add spacing after the paragraph */
+    max-width: 800px; /* Limit width for better content focus */
+}
+
+/* Link Styles */
+section a {
+    color: #6b1588; /* Dark purple for links */
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold; /* Emphasize links */
+    transition: color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+section a:hover {
+    color: #ff9900; /* Change to warm orange on hover */
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Unordered List Styles */
+ul {
+    list-style-type: square; /* Use square bullet points */
+    margin-left: 30px; /* Add left margin for better spacing */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    line-height: 1.6; /* Improve readability */
+    padding-left: 20px; /* Spacing from the edge */
+}
+
+/* Description List Styles */
+dl {
+    display: grid; /* Use grid layout */
+    grid-template-columns: max-content 1fr; /* Two-column layout: title and content */
+    gap: 10px 20px; /* Space between rows and columns */
+    font-size: 1.1rem; /* Consistent font size */
+}
+
+/* Description Term Styles */
+dl dt {
+    font-weight: bold; /* Make term bold */
+    text-align: left; /* Align terms to the right */
+}
+
+/* Description Definition Styles */
+dl dd {
+    margin: 0; /* Remove default margins */
+    font-style: italic; /* Italicize the description */
+}
+
+
+/* Project Section */
+.three-col {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Space between the cards */
+    margin-top: 20px; /* Add spacing from the heading */
+    padding: 20px; /* Add padding for spacing inside the section */
+}
+
+.card {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Add padding for content spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Enable flexbox for positioning */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+
+/* Image Styling within Card */
+.card img {
+    width: 100px; /* Set fixed width for consistency */
+    height: 100px; /* Set fixed height to match width */
+    object-fit: cover; /* Ensure the image maintains aspect ratio and fits */
+    margin-bottom: 15px; /* Space below the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Card Heading Styling */
+.card h3 {
+    font-family: 'Montserrat', sans-serif; /* Use a modern Google font */
+    font-size: 1.8rem; /* Increase font size for emphasis */
+    color: #004e92; /* Dark blue for a professional look */
+    text-align: center; /* Center align text content */
+    margin-bottom: 10px; /* Add space below heading */
+    font-weight: bold; /* Make the heading bold */
+    text-transform: uppercase; /* Uppercase for style */
+}
+
+
+/* Contact Page Styles */
+/* One-column layout for the entire contact section */
+.one-col {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a single column */
+    align-items: center; /* Center items horizontally */
+    max-width: 500px; /* Set a maximum width */
+    margin: 40px auto; /* Center the form section with vertical spacing */
+    padding: 30px; /* Add space inside the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* Form styling */
+form {
+    width: 100%; /* Full width within the container */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Input and Textarea Styling */
+form input, 
+form textarea {
+    width: 100%; /* Take up full width of parent */
+    padding: 12px; /* Comfortable padding for typing */
+    margin-bottom: 15px; /* Add spacing between fields */
+    border: 1px solid #ccc; /* Light border for clean look */
+    font-size: 1rem; /* Readable font size */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    transition: border-color 0.3s ease-in-out; /* Smooth border effect */
+}
+
+/* Input focus effect for better UX */
+form input:focus, 
+form textarea:focus {
+    border-color: #004e92; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 78, 146, 0.5); /* Add a soft glow effect */
+}
+
+/* Button Styling */
+form button {
+    width: 100%; /* Make the button fill the form width */
+    padding: 12px 15px; /* Padding for a better feel */
+    background-color: #004e92; /* Primary button color */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Larger font for prominence */
+    font-weight: bold; /* Make the text stand out */
+    cursor: pointer; /* Indicate interactivity */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #003366; /* Darker shade on hover */
+}
+
+/* Thank You Page Styles */
+.thank-you-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 100px auto; /* Center the section with spacing */
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the thank you heading */
+.thank-you-container h1 {
+    color: #004e92; /* Dark blue color */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for the thank you text */
+.thank-you-container p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styling for thank you page links */
+.thank-you-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #004e92; /* Blue button */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded button */
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the links */
+.thank-you-links a:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+
